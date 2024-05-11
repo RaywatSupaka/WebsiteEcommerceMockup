@@ -1,0 +1,35 @@
+<div class="min-h-screen bg-slate-100 grid grid-cols-2 p-16 gap-16">
+    <div class="bg-[#93B9DD] rounded-xl flex flex-col justify-center items-center text-white gap-8">
+        <h1 class="text-5xl">Welcome Back</h1>
+        <p class="text-xl">to keep connected with us please login with your personal info</p>
+        <button class="text-3xl px-5 py-3 border-2 border-white rounded-full" (click)="navigateToLogin()">SIGN IN</button>
+    </div>
+    <div class=" bg-white rounded-xl flex flex-col justify-center">
+        <h1 class="text-center text-5xl font-semibold"> Create Account </h1>
+        <form class=" flex flex-col">
+            <div class="flex flex-col gap-4 p-8 mx-28">
+                <input type="text" class="border border-gray-300 rounded-md p-2" placeholder="NID" >
+                <input type="text" class="border border-gray-300 rounded-md p-2" placeholder="Username" >
+                <input type="password" class="border border-gray-300 rounded-md p-2" placeholder="Password" >
+                <input type="date" class="border border-gray-300 rounded-md p-2" placeholder="Birthday">
+                <input type="text" class="border border-gray-300 rounded-md p-2" placeholder="Address">
+                <input type="text" class="border border-gray-300 rounded-md p-2" placeholder="Roles" >
+                <h1>Image</h1>
+                <input type="file" class="border border-gray-300 rounded-md p-2" >
+
+                <!-- that work when connect database  -->
+                <!-- <input type="text" class="border border-gray-300 rounded-md p-2" placeholder="NID" [(ngModel)]="nid">
+                <input type="text" class="border border-gray-300 rounded-md p-2" placeholder="Username" [(ngModel)]="username">
+                <input type="password" class="border border-gray-300 rounded-md p-2" placeholder="Password" [(ngModel)]="password">
+                <input type="date" class="border border-gray-300 rounded-md p-2" placeholder="Birthday" [(ngModel)]="birthday">
+                <input type="text" class="border border-gray-300 rounded-md p-2" placeholder="Address" [(ngModel)]="address">
+                <input type="text" class="border border-gray-300 rounded-md p-2" placeholder="Roles" [(ngModel)]="roles">
+                <input type="file" class="border border-gray-300 rounded-md p-2" [(ngModel)]="image"> -->
+
+
+                <button class="text-3xl  py-3 border-2 border-[#93B9DD] rounded-full bg-[#93B9DD] text-white mt-7">SIGN UP</button>
+            </div>
+            
+        </form>
+    </div>
+</div>
