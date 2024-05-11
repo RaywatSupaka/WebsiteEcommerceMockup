@@ -1,1 +1,109 @@
-<p>home works!</p>
+<app-navbar></app-navbar>
+<div class="mx-32 flex flex-col justify-center items-center">
+  <h1
+    class="font-bold text-4xl my-10 bg-[#FB6F92] hover:scale-105 px-8 py-3 rounded-full duration-150 text-white"
+  >
+    สินค้าใหม่
+  </h1>
+
+  <!-- add dummy search bar that not have function use tailwind css  -->
+
+  <div class="mb-12 w-full">
+    <div class="relative mx-1">
+      <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </div>
+      <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search..." disabled>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4 gap-10 mb-10">
+
+    <app-product-card
+      [imageUrl]="
+        'https://i.pinimg.com/564x/79/dc/9a/79dc9af171a983df390626b923792e91.jpg'
+      "
+      [name]="'ลำโพง'"
+      [price]="360"
+    ></app-product-card>
+
+    <app-product-card
+      [imageUrl]="
+        'https://i.pinimg.com/564x/88/20/35/8820357f7578c9bc10f70ef81ff299d2.jpg'
+      "
+      [name]="'เครื่องเล่นเพลง'"
+      [price]="500"
+    ></app-product-card>
+
+    <app-product-card
+      [imageUrl]="
+        'https://i.pinimg.com/564x/4e/74/12/4e741218a9cd4048dbf8f48e69060730.jpg'
+      "
+      [name]="'ปุ่มปรับเสียง'"
+      [price]="1000"
+    ></app-product-card>
+
+    <app-product-card
+      [imageUrl]="
+        'https://i.pinimg.com/564x/87/28/c4/8728c43a04aed6ac558ecf6aa5732ca2.jpg'
+      "
+      [name]="'นาฬิกาปลุก'"
+      [price]="400"
+    ></app-product-card>
+
+    <app-product-card
+      [imageUrl]="
+        'https://i.pinimg.com/736x/18/c0/ce/18c0cea0f590d07b6fc28c4ec8c0203a.jpg'
+      "
+      [name]="'หุ่นยนต์'"
+      [price]="1500"
+    ></app-product-card>
+
+    <app-product-card
+      [imageUrl]="
+        'https://i.pinimg.com/564x/3f/73/f6/3f73f6e16e57f2d8225d9b863229687f.jpg'
+      "
+      [name]="'เครื่องเล่นเกมพกพา'"
+      [price]="2000"
+    ></app-product-card>
+
+    <app-product-card
+      [imageUrl]="
+        'https://i.pinimg.com/564x/73/bf/a2/73bfa23e500af48f4cee01539ae84a22.jpg'
+      "
+      [name]="'คอมพิวเตอร์'"
+      [price]="5000"
+    ></app-product-card>
+
+    <app-product-card
+      [imageUrl]="
+        'https://i.pinimg.com/564x/cb/43/d6/cb43d6c135b7f54e4714f3ade222f7f1.jpg'
+      "
+      [name]="'โมเดลกล้อง'"
+      [price]="260"
+    ></app-product-card>
+
+    <app-product-card
+      [imageUrl]="
+        'https://i.pinimg.com/564x/69/56/44/6956447c3db56e19eeb059d022117b81.jpg'
+      "
+      [name]="'สนามบาสจิ๋ว'"
+      [price]="840"
+    ></app-product-card>
+
+    <app-product-card
+      [imageUrl]="
+        'https://i.pinimg.com/564x/43/a5/b2/43a5b2cee67bf2414fc393393a64f2f0.jpg'
+      "
+      [name]="'เครื่องชงกาแฟ'"
+      [price]="6800"
+    ></app-product-card>
+
+    
+
+
+    
+  </div>
+</div>
